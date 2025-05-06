@@ -1,0 +1,21 @@
+[project]
+name = "mcp-search"
+version = "0.1.0"
+description = "Index and recommend MCP servers"
+requires-python = ">=3.9"
+
+[project.dependencies]
+fastapi = "^0.111"
+psycopg = {extras = ["binary"], version = "^3.1"}
+asyncpg = "^0.29"
+sqlmodel = "^0.0.16"
+pgvector = "^0.2.4"
+openai = "^1.14"
+python-dotenv = "^1.0"
+# async crawler helpers
+aiohttp = "^3.9"
+tqdm = "^4.66"
+# MCP stack
+mcp = {version = "*", extras = ["cli"]}
+uvicorn = "^0.29"
+pydantic-settings = "^2.2" 
